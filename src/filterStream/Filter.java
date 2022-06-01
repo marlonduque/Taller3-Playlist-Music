@@ -13,7 +13,7 @@ public class Filter {
      *
      * @param args   To make the print in console, you must leave line 20 free .filter,
      *               and there are 3 lines more for what you want to inform you that if
-     *               you must comment the 2 lines to not generate error
+     *               you must comment the 2 lines to not generate error.
      */
     public static void main(String[] args) {
         List<Song> songList = Main.loadSongs();
