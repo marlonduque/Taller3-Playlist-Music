@@ -1,6 +1,6 @@
 package Model;
 
-
+import java.io.File;
 import java.time.LocalDate;
 
 public class Song {
@@ -9,8 +9,9 @@ public class Song {
     private int date;
     private String gnre;
     private float duration;
-    private String frontPage;
+    private File frontPage;
     private String description;
+
 
     /**
      * Constructor
@@ -20,13 +21,13 @@ public class Song {
      * @param gnre
      * @param frontPage
      */
-    public Song(String title, int identity, int date, String gnre, float duration, String frontPage, String description) {
+    public Song(String title, int identity, int date, String gnre, float duration, File frontPage, String description) {
         this.title = title;
         this.identity = identity;
         this.date = date;
         this.gnre = gnre;
         this.duration = duration;
-        this.frontPage = frontPage;
+        this.frontPage =  frontPage;
         this.description = description;
     }
 
@@ -56,7 +57,7 @@ public class Song {
         return duration;
     }
 
-    public String getFrontPage() {
+    public File getFrontPage() {
         return frontPage;
     }
 
@@ -72,7 +73,7 @@ public class Song {
                 ", date=" + date +
                 ", gnre='" + gnre + '\'' +
                 ", duration=" + duration +
-                ", frontPage='" + frontPage + '\'' +
+                ", frontPage='" +  frontPage + '\'' +
                 ", description='" + description + '\'' +
                 '}';
     }

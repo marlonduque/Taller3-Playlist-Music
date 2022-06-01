@@ -23,16 +23,11 @@ public class Filter {
                 //Genres: Rock, Pop, Soul Classic, Music Electronic
 
                 .filter(song -> song.getGnre().equalsIgnoreCase("Pop"))
-                .forEach(song ->System.out.println(song.getTitle()));
-        //.forEach(song ->System.out.println(song.getDate()));
-        //.forEach(song ->System.out.println(song.getDuration()));
+               // .forEach(song ->System.out.println(song.getTitle()));
+             //.forEach(song ->System.out.println(song.getDate()));
+             //.forEach(song ->System.out.println(song.getDuration()));
+                .forEach(song ->System.out.println(song.getFrontPage()));
 
 
-
-
-
-
-
-        //.forEach(song -> System.out.println(song.getDate()));
     }
 }
