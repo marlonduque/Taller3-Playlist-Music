@@ -1,4 +1,4 @@
-package main;
+package mainPlaylist;
 
 import Model.Song;
 
@@ -6,7 +6,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Playlist {
     /**
      *
      * @return list 7 song
